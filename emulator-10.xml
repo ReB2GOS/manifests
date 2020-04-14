@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+
+  <default revision="refs/tags/android-10.0.0_r11" remote="aosp" sync-j="4"/>
+
+  <!-- KaiOS -->
+  <include name="kaios.xml"/>
+
+  <!-- AOSP -->
+  <include name="aosp.xml"/>
+
+<manifest>
