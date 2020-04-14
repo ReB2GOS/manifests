@@ -10,4 +10,4 @@
   <!-- AOSP -->
   <include name="aosp.xml"/>
 
-<manifest>
+</manifest>
