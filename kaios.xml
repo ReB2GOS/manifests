@@ -4,7 +4,7 @@
   <remote fetch="https://android.googlesource.com" name="aosp"/>
   <remote fetch="https://github.com/kaiostech/" name="kaios"/>
   <remote fetch="https://github.com/ReB2GOS/" name="reb2g"/>
-  <default revision="refs/tags/android-10.0.0_r11" remote="aosp" sync-j="16"/>
+
 
   <!-- KaiOS -->
   <project groups="kai" name="gecko-b2g" path="gecko" remote="kaios" revision="gonk"/>
