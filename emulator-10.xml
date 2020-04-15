@@ -10,4 +10,10 @@
   <!-- AOSP -->
   <include name="aosp.xml"/>
 
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+  <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
+  <project path="device/sample" name="device/sample" groups="pdk" />
+  
+
 </manifest>
