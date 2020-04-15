@@ -10,17 +10,18 @@
   <!-- AOSP -->
   <include name="aosp.xml"/>
   <include name="aosp_env_liunx.xml"/>
+  
+ 
+  <remote  name="lemon"
+           fetch="https://github.com/Pie-onyx"
+           revision="aosp-10.0" />
 
   <!-- qcom staff -->
-  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
-  <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom_camera,pdk-qcom" />
   <project path="hardware/qcom/data/ipacfg-mgr" name="platform/hardware/qcom/data/ipacfg-mgr" groups="qcom,pdk-qcom" />
-  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lemon" revision="aosp-10.0_caf-8974" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps,pdk-qcom" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster,pdk-qcom" />
-  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960,pdk-qcom" />
   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="qcom_msm8994,pdk-qcom" />
   <project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="qcom_msm8996,pdk-qcom" />
@@ -41,9 +42,36 @@
   <project path="hardware/qcom/sdm845/media" name="platform/hardware/qcom/sdm845/media" groups="qcom_sdm845" />
   <project path="hardware/qcom/sdm845/thermal" name="platform/hardware/qcom/sdm845/thermal" groups="generic_fs,qcom_sdm845" />
   <project path="hardware/qcom/sdm845/vr" name="platform/hardware/qcom/sdm845/vr" groups="generic_fs,qcom_sdm845" />
-  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
 
   <!-- onyx staff supported by lemon -->
+  <remove-project name="external/selinux" />
+  <project path="external/selinux" name="external_selinux" groups="pdk" remote="lemon" />
+  <remove-project name="frameworks/av" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="lemon" />
+  <remove-project name="frameworks/native" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="lemon" />
+  <remove-project name="hardware/qcom/display" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lemon" />
+  <remove-project name="hardware/qcom/media" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="lemon" />
+  <remove-project name="system/bt" />
+  <project path="system/bt" name="system_bt" groups="pdk" remote="lemon" />
+  <remove-project name="hardware/libhardware" />
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="lemon" />
+  <remove-project name="art" />
+  <project path="art" name="art" groups="pdk" remote="lemon" />
+  <remove-project name="external/tinycompress" />
+  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="lemon" />
+  <remove-project name="hardware/libhardware_legacy" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="lemon" />
+  
+  
+  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />  
+  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
+  
   <project path="patcher" name="patcher" remote="lemon" revision="master" />
   <project path="external/sony/boringssl-compat" name="external_sony_boringssl-compat" remote="lemon" />
   <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
