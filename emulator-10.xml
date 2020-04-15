@@ -9,7 +9,8 @@
 
   <!-- AOSP -->
   <include name="aosp.xml"/>
-
+  <include name="aosp_env_darwin.xml"/>
+  
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
