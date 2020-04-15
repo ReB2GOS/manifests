@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <include name="repo_aosp_tuna.xml"/>
+ <include name="repo_aosp.xml"/>
   <default revision="refs/tags/android-10.0.0_r11" remote="aosp" sync-j="4"/>
 
   <!-- KaiOS -->
