@@ -9,7 +9,7 @@
   <include name="aosp_env_darwin.xml"/>
   <remote fetch="https://android.googlesource.com" name="aosp" />
   <remote fetch="https://aosp.tuna.tsinghua.edu.cn/" name="tuna"/>
-  <remote fetch="mirrors.ustc.edu.cn/aosp/" name="ustc"/>
+  <remote fetch="https://mirrors.ustc.edu.cn/aosp/" name="ustc"/>
   <default revision="refs/tags/android-10.0.0_r11" remote="ustc"/>
   
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
