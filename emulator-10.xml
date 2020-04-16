@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<!--
+
 
   <!-- KaiOS -->
-  <include name="kaios.xml"/>
--->
+<!--  <include name="kaios.xml"/> -->
   <!-- AOSP -->
   <include name="aosp.xml"/>
   <include name="aosp_env_darwin.xml"/>
