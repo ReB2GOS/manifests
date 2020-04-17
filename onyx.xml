@@ -7,11 +7,10 @@
   <!-- AOSP -->
   <include name="aosp.xml"/>
   <include name="aosp_env_liunx.xml"/>
-    <remote fetch="https://android.googlesource.com" name="aosp" />
+  <remote fetch="https://android.googlesource.com" name="aosp" />
   <remote fetch="https://aosp.tuna.tsinghua.edu.cn/" name="tuna"/>
   <remote fetch="git://mirrors.ustc.edu.cn/aosp/" name="ustc"/>
   <default revision="refs/tags/android-10.0.0_r11" remote="aosp"/>
-  <default revision="refs/tags/android-10.0.0_r11" remote="aosp" sync-j="4"/>  
  
   <remote  name="lemon"
            fetch="https://github.com/Pie-onyx"
