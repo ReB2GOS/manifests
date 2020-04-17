@@ -3,7 +3,7 @@
 
 
   <!-- KaiOS -->
-<!--  <include name="kaios.xml"/> -->
+ <include name="kaios.xml"/> 
   <!-- AOSP -->
   <include name="aosp.xml"/>
   <include name="aosp_env_liunx.xml"/>
