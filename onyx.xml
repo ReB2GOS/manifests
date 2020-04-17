@@ -89,7 +89,7 @@
   <remove-project name="platform/art" />
   <remove-project name="platform/external/tinycompress" /> 
   <remove-project name="platform/hardware/libhardware_legacy" />
-  <remove-project name="platform/platform/bionic"  />
+  <remove-project name="platform/bionic"  />
                   
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="lemon" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="lemon" />
