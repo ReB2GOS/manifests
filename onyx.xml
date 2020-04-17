@@ -64,7 +64,7 @@
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="lemon" />
   <remove-project name="hardware/libhardware_legacy" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="lemon" />
-  
+   <project path="bionic" name="bionic" groups="pdk" remote="lemon" />
   
   <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />  
@@ -74,13 +74,12 @@
   
   <project path="patcher" name="patcher" remote="lemon" revision="master" />
   <project path="external/sony/boringssl-compat" name="external_sony_boringssl-compat" remote="lemon" />
-  <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="lemon" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="lemon" />
   
-  <project path="kernel/oneplus/onyx" name="android_kernel_oneplus_onyx" remote="reb2g" revision="lineage-17.1" />
-  <project path="device/oppo/common" name="android_device_oppo_common" remote="reb2g" revision="lineage-17.1" />
-  <project path="device/oneplus/onyx" name="device_oneplus_onyx" remote="reb2g" revision="lineage-17.1" />
-  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="reb2g" revision="lineage-17.1" />
-  
+  <project path="vendor/lemon" name="vendor_lemon" remote="reb2g" revision="aosp-10.0"/>
+  <project path="kernel/oneplus/onyx" name="android_kernel_oneplus_onyx" remote="reb2g" revision="lineage-17.0" />
+  <project path="device/oneplus/onyx" name="device_oneplus_onyx" remote="reb2g" revision="aosp-10.0" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="reb2g" revision="lineage-17.0" />
+   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
