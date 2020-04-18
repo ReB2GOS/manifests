@@ -38,6 +38,37 @@
   <project path="system/core" name="system_core" groups="pdk" remote="reb2g"  revision="gonk-onyx" />
 
   
+
+
+
+  <project name="platform/test/framework" path="test/framework"/>
+  <project name="platform/test/mlts/benchmark" path="test/mlts/benchmark"/>
+  <project name="platform/test/mlts/models" path="test/mlts/models" clone-depth="1"/>
+  <project name="platform/test/mts" path="test/mts"/>
+  <project name="platform/test/suite_harness" path="test/suite_harness"/>
+  <project name="platform/test/vti/alert" path="test/vti/alert"/>
+  <project name="platform/test/vti/dashboard" path="test/vti/dashboard"/>
+  <project name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving"/>
+  <project name="platform/test/vti/test_serving" path="test/vti/test_serving"/>
+  <project name="platform/test/vts" path="test/vts"/>
+  <project name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz"/>
+  <project name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal"/>
+  <project name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace"/>
+  <project name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel"/>
+  <project name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu"/>
+  <project name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance"/>
+  <project name="platform/test/vts-testcase/security" path="test/vts-testcase/security"/>
+  <project name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk"/>
+  
+
+
+
+
+
+
+
+
+
   <!-- found in onyx aosp-10.0 -->
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
