@@ -39,6 +39,7 @@
 
   
 
+  <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
 
 
   <project name="platform/test/framework" path="test/framework"/>
