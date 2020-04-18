@@ -622,5 +622,4 @@
   <project path="device/oneplus/onyx" name="device_oneplus_onyx" remote="reb2g" revision="aosp-10.0" />
   <project path="vendor/oneplus/onyx" name="proprietary_vendor_oneplus" remote="reb2g" revision="lineage-17.0" />
   
-  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
