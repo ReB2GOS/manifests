@@ -23,9 +23,9 @@
   <default revision="refs/tags/android-10.0.0_r11" remote="aosp"/>
   
 
- 
-   <project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" remote="github" revision="refs/heads/lineage-17.0"  />
+ <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy-legacy" groups="qcom,pdk-qcom" remote="github" revision="refs/heads/lineage-17.0"  />
 
+   
   <project path="hardware/qcom/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="github" revision="refs/heads/lineage-17.0" />
   <project path="hardware/qcom/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" groups="pdk-qcom" remote="github" revision="refs/heads/lineage-17.0" />
   <project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" remote="github" revision="refs/heads/lineage-17.0" />
