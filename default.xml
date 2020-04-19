@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://android.googlesource.com" name="aosp"/>
+    <remote fetch="git://mirrors.ustc.edu.cn/aosp/" name="ustc"/>
   
     <remote fetch="https://github.com/ReB2GOS/" name="reb2g"/>
   
   <default revision="refs/tags/ndk-r20b"
-           remote="aosp"
+           remote="ustc"
            sync-j="4" />
   <project path="bionic" name="platform/bionic" groups="presubmit" />
   <project path="development" name="platform/development" groups="presubmit" />
