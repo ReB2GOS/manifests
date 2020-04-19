@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
+  <remote fetch="https://android.googlesource.com" name="aosp"/>
   
     <remote fetch="https://github.com/ReB2GOS/" name="reb2g"/>
   
