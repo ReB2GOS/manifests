@@ -6,7 +6,7 @@
     <remote fetch="https://github.com/ReB2GOS/" name="reb2g"/>
   
   <default revision="refs/tags/ndk-r20b"
-           remote="ustc"
+           remote="aosp"
            sync-j="4" />
   <project path="bionic" name="platform/bionic" groups="presubmit" />
   <project path="development" name="platform/development" groups="presubmit" />
