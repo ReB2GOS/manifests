@@ -645,7 +645,7 @@
   <project path="system/nfc" name="platform/system/nfc" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
+
   <project path="system/server_configurable_flags" name="platform/system/server_configurable_flags" groups="pdk"/>
   <project path="system/testing/gtest_extras" name="platform/system/testing/gtest_extras" groups="pdk" />
   <project path="system/timezone" name="platform/system/timezone" groups="pdk" />
@@ -710,6 +710,7 @@
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="lemon" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="lemon" />
 
+  <project path="system/sepolicy" name="ReB2GOS/sepolicy" remote="github"    revision="aosp-10.0-r1" />
  
   <project name="Pie-onyx/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="aosp-10.0" />
   <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="lineage-17.0-sultan" depth="1" />
