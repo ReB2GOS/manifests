@@ -413,9 +413,8 @@
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="lemon" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
-  <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" groups="pdk-fs" />
-  <project path="frameworks/opt/car/setupwizard" name="platform/frameworks/opt/car/setupwizard" groups="pdk" />
+
+
   <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs,pdk-fs" />
@@ -425,9 +424,10 @@
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
+
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
@@ -655,6 +655,7 @@
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" />
   <project path="system/ucontainer" name="platform/system/ucontainer" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
+  <!--
   <project path="test/framework" name="platform/test/framework" groups="vts,projectarch,pdk" />
   <project path="test/mlts/benchmark" name="platform/test/mlts/benchmark" groups="pdk" />
   <project path="test/mlts/models" name="platform/test/mlts/models" groups="pdk" />
@@ -673,6 +674,7 @@
   <project path="test/vts-testcase/performance" name="platform/test/vts-testcase/performance" groups="vts,projectarch,pdk" />
   <project path="test/vts-testcase/security" name="platform/test/vts-testcase/security" groups="vts,projectarch,pdk" />
   <project path="test/vts-testcase/vndk" name="platform/test/vts-testcase/vndk" groups="vts,pdk" />
+  -->
   <project path="toolchain/benchmark" name="toolchain/benchmark" />
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" groups="pdk" />
   <project path="tools/acloud" name="platform/tools/acloud" groups="tools,vts,projectarch,pdk,tradefed" />
@@ -719,6 +721,9 @@
   <project path="system/core" name="system_core" groups="pdk" remote="lemon"  /> 
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="lemon" />
 
+  <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" groups="pdk-fs" />
+  <project path="frameworks/opt/car/setupwizard" name="platform/frameworks/opt/car/setupwizard" groups="pdk" />
+  <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
 -->  
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
 
@@ -735,6 +740,9 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   
+  <project groups="kai" name="fake_test" path="test" remote="kaios" revision="master">
+    <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
+  </project>
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
 </manifest>
