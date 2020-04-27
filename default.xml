@@ -614,7 +614,6 @@
   <project path="system/bpfprogs" name="platform/system/bpfprogs" groups="pdk" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
   <project path="system/chre" name="platform/system/chre" groups="pdk" />
-  <!-- <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" /> -->
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
@@ -640,7 +639,6 @@
   <project path="system/testing/gtest_extras" name="platform/system/testing/gtest_extras" groups="pdk" />
   <project path="system/timezone" name="platform/system/timezone" groups="pdk" />
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk" />
-  <!-- <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" /> -->
   <project path="system/tools/sysprop" name="platform/system/tools/sysprop" groups="pdk" />
   <project path="system/tools/xsdc" name="platform/system/tools/xsdc" groups="pdk" />
   <project path="system/update_engine" name="platform/system/update_engine" groups="pdk" />
@@ -716,35 +714,27 @@
 
 -->  
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-
   <project path="external/selinux" name="platform/external/selinux" groups="pdk"  />
  <project path="system/core" name="platform/system/core" groups="pdk"   /> 
 
-  <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="gonk-onyx" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
+  <!-- gonk change -->
+  
 <!--
   <project groups="kai" name="fake_test" path="test" remote="kaios" revision="master">
     <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
   </project>
 -->
-   <project path="build/soong" name="ReB2GOS/build_soong" groups="pdk,tradefed"  remote="github" revision="gonk-onyx" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
   
  <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" /> 
  <!-- <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  -->
-  <!--
-  <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>
--->
+  
+<!-- <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" /> -->
+<!-- <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/> -->
+  
+
   <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/>
+  
+   <!-- <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" /> -->
   <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/> 
     
   
@@ -760,13 +750,28 @@
     <linkfile src="tools" dest="build/tools" />
   </project>  
 -->
+  
+  
+  <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="gonk-onyx" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  
      <!--
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="lemon" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
     -->
-  
+     <project path="build/soong" name="ReB2GOS/build_soong" groups="pdk,tradefed"  remote="github" revision="gonk-onyx" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   
   
   
