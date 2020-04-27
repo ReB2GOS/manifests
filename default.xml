@@ -753,7 +753,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   
-  <project name="gonk-misc" path="ReB2GOS/gonk-misc"  remote="github" revision="gonk-onyx" />
+  <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" />
   <project groups="kai" name="platform_system_core" path="system/core" remote="kaios" revision="gonk_android-10.0.0_r11"/>
   
   <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>
