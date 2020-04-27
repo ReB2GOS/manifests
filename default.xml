@@ -14,23 +14,9 @@
            remote="aosp"
            sync-j="128" />
 
-   <project path="build/make" name="build_make" groups="pdk" remote="lemon" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>  
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
-   <!--
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="lemon" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-    -->
+
   <project path="art" name="art" groups="pdk" remote="lemon" />
   <project path="bionic" name="bionic" groups="pdk" remote="lemon" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -733,7 +719,7 @@
 
   <project path="external/selinux" name="platform/external/selinux" groups="pdk"  />
  <project path="system/core" name="platform/system/core" groups="pdk"   /> 
- <!-- 
+
   <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="gonk-onyx" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -743,11 +729,11 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  -->
+<!--
   <project groups="kai" name="fake_test" path="test" remote="kaios" revision="master">
     <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
   </project>
-
+-->
    <project path="build/soong" name="ReB2GOS/build_soong" groups="pdk,tradefed"  remote="github" revision="gonk-onyx" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -755,11 +741,35 @@
   
  <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" /> 
  <!-- <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  -->
-  
+  <!--
   <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>
+-->
   <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/>
   <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/> 
     
+  
+  
+  <!--
+   <project path="build/make" name="build_make" groups="pdk" remote="lemon" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>  
+-->
+     <!--
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="lemon" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+    -->
+  
+  
+  
+  
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
 </manifest>
