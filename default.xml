@@ -729,7 +729,7 @@
  <!-- <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  -->
   
 <!-- <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" /> -->
-<!-- <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/> -->
+  <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>
   
 
   <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/>
