@@ -13,7 +13,7 @@
            remote="aosp"
            sync-j="128" />
 
-  <project path="build/make" name="build_make" groups="pdk" remote="lemon" >
+  <!--  <project path="build/make" name="build_make" groups="pdk" remote="lemon" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -21,7 +21,7 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project>
+  </project>  -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="lemon" >
@@ -722,6 +722,16 @@
 
   <project path="external/selinux" name="platform/external/selinux" groups="pdk"  />
   <project path="system/core" name="platform/system/core" groups="pdk"   />
+  
+  <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="gonk-onyx" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
