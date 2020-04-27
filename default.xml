@@ -733,7 +733,7 @@
 
   <project path="external/selinux" name="platform/external/selinux" groups="pdk"  />
  <project path="system/core" name="platform/system/core" groups="pdk"   /> 
-  
+ <!-- 
   <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="gonk-onyx" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -743,7 +743,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  
+  -->
   <project groups="kai" name="fake_test" path="test" remote="kaios" revision="master">
     <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
   </project>
