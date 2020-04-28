@@ -742,7 +742,7 @@
   
 <!--  <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" />  -->
   
- <!--   <project path="system/core" name="platform/system/core" groups="pdk"   />   -->
+  <project path="system/core" name="platform/system/core" groups="pdk"   />   
  <!-- <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />    -->
   
  <!--   <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />  -->
