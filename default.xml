@@ -17,8 +17,7 @@
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
 
-  <project path="art" name="art" groups="pdk" remote="lemon" />
-  <project path="bionic" name="bionic" groups="pdk" remote="lemon" />
+  
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -356,7 +355,7 @@
   <project path="external/tensorflow" name="platform/external/tensorflow" groups="pdk" />
   <project path="external/testng" name="platform/external/testng" groups="pdk" />
   <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
-  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="lemon" />
+  
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/toolchain-utils" name="platform/external/toolchain-utils" />
@@ -400,7 +399,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="lemon" />
+  
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" groups="pdk-fs" />
   <project path="frameworks/opt/car/setupwizard" name="platform/frameworks/opt/car/setupwizard" groups="pdk" />
@@ -432,20 +431,18 @@
   <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="pixel" />
   <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" />
-  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="lemon" />
-  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="lemon" />
+
   <project path="hardware/nxp/nfc" name="platform/hardware/nxp/nfc" groups="pdk" />
   <project path="hardware/nxp/secure_element" name="platform/hardware/nxp/secure_element" groups="pdk" />
-  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
-  <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
-  <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
+ <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
+
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom_camera,pdk-qcom" />
   <project path="hardware/qcom/data/ipacfg-mgr" name="platform/hardware/qcom/data/ipacfg-mgr" groups="qcom,pdk-qcom" />
-  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lemon" revision="aosp-10.0_caf-8974" />
+
+  
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps,pdk-qcom" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster,pdk-qcom" />
-  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
-  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
+
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ti/am57x" name="platform/hardware/ti/am57x" groups="pdk" />
   <project path="kernel/build" name="kernel/build" />
@@ -548,13 +545,16 @@
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" groups="pdk-fs" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" groups="pdk-fs" />
+  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
+ 
   <project path="packages/services/BuiltInPrintService" name="platform/packages/services/BuiltInPrintService" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/AlternativeNetworkAccess" name="platform/packages/services/AlternativeNetworkAccess" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/services/Telephony" name="platform/packages/services/Telephony" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" groups="pdk-fs" />
+ 
+
 
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" />
@@ -609,7 +609,7 @@
   </project>
   <project path="system/apex" name="platform/system/apex" groups="pdk" />
   <project path="system/ashmemd" name="platform/system/ashmemd" groups="pdk" />
-  <project path="system/bt" name="system_bt" groups="pdk" remote="lemon" />
+
   <project path="system/bpf" name="platform/system/bpf" groups="pdk" />
   <project path="system/bpfprogs" name="platform/system/bpfprogs" groups="pdk" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
@@ -696,6 +696,20 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
   <!-- Lemon staff -->
+  <project path="art" name="art" groups="pdk" remote="lemon" />
+  <project path="bionic" name="bionic" groups="pdk" remote="lemon" />
+  
+  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="lemon" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="lemon" />
+  <project path="system/bt" name="system_bt" groups="pdk" remote="lemon" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
+  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="lemon" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="lemon" />
+ 
   <project path="patcher" name="patcher" remote="lemon" revision="master" />
   <project path="external/sony/boringssl-compat" name="external_sony_boringssl-compat" remote="lemon" />
   <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
@@ -703,19 +717,20 @@
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="lemon" />
 
  <!--  <project path="system/sepolicy" name="ReB2GOS/sepolicy" remote="github"    revision="aosp-10.0-r1" /> -->
-   <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
+  <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
   <project name="ReB2GOS/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="aosp-10.0" />
   <project name="ReB2GOS/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="lineage-17.0-sultan" depth="1" />
   <project name="YumeMichi/vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="github" revision="lineage-17.0" depth="1" />
 
-  <!-- <project path="external/selinux" name="external_selinux" groups="pdk" remote="lemon" />  
+  <!-- 
+  <project path="external/selinux" name="external_selinux" groups="pdk" remote="lemon" />  
   <project path="system/core" name="system_core" groups="pdk" remote="lemon"  /> 
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="lemon" />
 
 -->  
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
   <project path="external/selinux" name="platform/external/selinux" groups="pdk"  />
- <project path="system/core" name="platform/system/core" groups="pdk"   /> 
+  <project path="system/core" name="platform/system/core" groups="pdk"   /> 
 
   <!-- gonk change -->
   
@@ -728,14 +743,13 @@
 <!-- <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" /> -->
  <!-- <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  -->
   
-<!-- <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" /> -->
-  <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>
+ <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />
+ <!--   <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/>  -->
   
 
-  <!-- <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/> -->
-  
-   <!-- <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" /> -->
-  <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/> 
+   <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/> 
+   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" /> 
+  <!-- <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/>  -->
     
   
   
