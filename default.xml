@@ -777,18 +777,18 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
  
-       <!--
+  
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="lemon" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
--->
- 
+
+  <!--
   <project path="build/soong" name="ReB2GOS/build_soong" groups="pdk,tradefed"  remote="github" revision="gonk-onyx" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  
+  -->
  
   
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
