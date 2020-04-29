@@ -734,16 +734,16 @@
 
   <!-- gonk change -->
   
-
+<!-- 
   <project groups="kai" name="fake_test" path="test" remote="kaios" revision="master">
     <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
   </project>
-
+-->
   
 <!--  <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" />  -->
   
-  <project path="system/core" name="platform/system/core" groups="pdk"   />  
- <!-- <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />   -->
+ <!-- <project path="system/core" name="platform/system/core" groups="pdk"   />    -->
+  <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  
   
  <!--   <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />  -->
   <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/> 
@@ -767,7 +767,7 @@
   </project>  
  
   <!--
-  <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="gonk-onyx" >
+  <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="exp" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -777,18 +777,18 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
  -->
-  
+   <!--
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="lemon" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-
-  <!--
+  -->
+  
   <project path="build/soong" name="ReB2GOS/build_soong" groups="pdk,tradefed"  remote="github" revision="gonk-onyx" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  -->
+
  
   
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
