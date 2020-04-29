@@ -401,25 +401,29 @@
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
   
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
+  <!--
   <project path="frameworks/opt/car/services" name="platform/frameworks/opt/car/services" groups="pdk-fs" />
   <project path="frameworks/opt/car/setupwizard" name="platform/frameworks/opt/car/setupwizard" groups="pdk" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
-
+  <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/chips" name="platform/frameworks/opt/chips" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/gamesdk" name="platform/frameworks/opt/gamesdk" />
+  <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
+  -->
+
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" groups="pdk-fs" />
   <project path="frameworks/opt/net/ike" name="platform/frameworks/opt/net/ike" groups="pdk" />
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
   <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
-  <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs,pdk-fs" />
 
-  <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
+
+
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
@@ -432,8 +436,10 @@
   <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" />
 
+  <!--
   <project path="hardware/nxp/nfc" name="platform/hardware/nxp/nfc" groups="pdk" />
   <project path="hardware/nxp/secure_element" name="platform/hardware/nxp/secure_element" groups="pdk" />
+  -->
  <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
 
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom_camera,pdk-qcom" />
@@ -791,8 +797,24 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-
- 
+  
+  
+  <remove-project name="platform/prebuilts/qemu-kernel" />
+  <remove-project name="platform/prebuilts/android-emulator" />
+  <remove-project name="platform/external/autotest" />
+  <remove-project name="platform/external/linux-kselftest" />
+  
+  <!--
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  -->
   
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
