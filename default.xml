@@ -718,7 +718,7 @@
 
  <!--  <project path="system/sepolicy" name="ReB2GOS/sepolicy" remote="github"    revision="aosp-10.0-r1" /> -->
   <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
-  <project name="ReB2GOS/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="gonk-onyx" />
+  <project name="ReB2GOS/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="exp" />
   <project name="ReB2GOS/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="lineage-17.0-sultan" depth="1" />
   <project name="YumeMichi/vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="github" revision="lineage-17.0" depth="1" />
 
