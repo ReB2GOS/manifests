@@ -505,7 +505,7 @@
   <project path="packages/apps/SafetyRegulatoryInfo" name="platform/packages/apps/SafetyRegulatoryInfo" groups="pdk-fs" />
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs" />
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" />
+<!--  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" /> -->
   <project path="packages/apps/SettingsIntelligence" name="platform/packages/apps/SettingsIntelligence" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
@@ -734,11 +734,11 @@
 
   <!-- gonk change -->
   
-<!-- 
+
   <project groups="kai" name="fake_test" path="test" remote="kaios" revision="master">
     <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
   </project>
--->
+
   
  <!--   <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" />   -->
   
