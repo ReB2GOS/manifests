@@ -741,8 +741,7 @@
   </project>
 
   
- <!--   <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" />   -->
-  <project groups="kai" name="gecko-b2g" path="gecko" remote="kaios" revision="gonk"/>
+   <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="gonk-onyx" /> 
  <!-- <project path="system/core" name="platform/system/core" groups="pdk"   />    -->
   <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  
   
@@ -750,7 +749,7 @@
   <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/> 
   
 
- <!--  <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/>    -->
+  <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/>   
   <!--  <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" />  -->
   <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/>  
     
