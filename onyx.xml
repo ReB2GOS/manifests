@@ -4,6 +4,7 @@
   <include name="kaios.xml"/>
   <include name="aosp.xml"/>
   <include name="aosp_darwin.xml"/>
+  <include name="aosp_liunx.xml"/>
  
   <remote name="github" fetch="https://github.com" />
   <remote name="lemon"  fetch="https://github.com/Pie-onyx" revision="aosp-10.0" />
