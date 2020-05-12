@@ -13,8 +13,8 @@
            remote="aosp"
            sync-j="128" />
  
-  <remove-project name="art" />
-  <remove-project name="bionic" />
+  <remove-project name="platform/art" />
+  <remove-project name="platform/bionic" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/system/bt" />
