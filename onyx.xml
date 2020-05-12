@@ -27,7 +27,7 @@
   <remove-project name="platform/external/autotest" />
   <remove-project name="platform/external/linux-kselftest" />
  
-  <!-------------------------------------------------- onyx mod --------------------------------------------------->
+  <!-- onyx mod -->
  
                           <!-- add qcom -->
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
@@ -66,7 +66,7 @@
   <project name="YumeMichi/vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="github" revision="lineage-17.0" depth="1" />
 
 
-   <!-------------------------------------------------- gonk mod --------------------------------------------------->
+   <!-- gonk mod -->
   
   <!-- <project groups="kai" name="ReB2GOS/gecko-b2g" path="gecko"  remote="github" revision="gonk" />  -->
   
