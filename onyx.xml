@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
  
-  <remote  name="github"
-           fetch="https://github.com" />
-  <remote  name="lemon"
-           fetch="https://github.com/Pie-onyx"
-           revision="aosp-10.0" />
+  <include name="kaios.xml"/>
+  <include name="aosp.xml"/>
+  <include name="aosp_darwin.xml"/>
+ 
+  <remote name="github" fetch="https://github.com" />
+  <remote name="lemon"  fetch="https://github.com/Pie-onyx" revision="aosp-10.0" />
+  <remote name="reb2g"  fetch="https://github.com/ReB2GOS/" />
 
-           
-  <remote fetch="https://github.com/kaiostech/" name="kaios"/>
-  
   <default revision="refs/tags/android-10.0.0_r11"
            remote="aosp"
            sync-j="128" />
-
  
   <remove-project name="art" />
   <remove-project name="bionic" />
@@ -29,8 +27,7 @@
   <remove-project name="platform/external/autotest" />
   <remove-project name="platform/external/linux-kselftest" />
  
-  <!-- onyx mod -->
-
+  <!-------------------------------------------------- onyx mod --------------------------------------------------->
  
                           <!-- add qcom -->
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk-qcom" />
@@ -47,23 +44,20 @@
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom,pdk-qcom" remote="lemon" revision="aosp-10.0_caf" />
   <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lemon" revision="aosp-10.0_caf-8974" />
   
- 
- 
-  
                           <!-- onyx staff -->
   <project path="art" name="art" groups="pdk" remote="lemon" />
   <project path="bionic" name="bionic" groups="pdk" remote="lemon" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="lemon" />
   <project path="system/bt" name="system_bt" groups="pdk" remote="lemon" />
-   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="lemon" />
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="lemon" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="lemon" />
-   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />     <!-- ??remove -->
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />     <!-- ??remove -->
   <project path="external/selinux" name="platform/external/selinux" groups="pdk"  />
-   <project path="external/sony/boringssl-compat" name="external_sony_boringssl-compat" remote="lemon" />
+  <project path="external/sony/boringssl-compat" name="external_sony_boringssl-compat" remote="lemon" />
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="lemon" />
   <!-- <project path="external/selinux" name="platform/external/selinux" groups="pdk" remote="lemon" /> -->
 
-<!-- add onyx tree-->
+   <!-- add onyx tree-->
  
   <!-- <project path="patcher" name="patcher" remote="lemon" revision="master" /> -->
   <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
@@ -72,22 +66,16 @@
   <project name="YumeMichi/vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="github" revision="lineage-17.0" depth="1" />
 
 
-
-
-  <!-- gonk  -->
+   <!-------------------------------------------------- gonk mod --------------------------------------------------->
   
   <!-- <project groups="kai" name="ReB2GOS/gecko-b2g" path="gecko"  remote="github" revision="gonk" />  -->
   
-  <project groups="kai" name="fake_test" path="test" remote="kaios" revision="master">
-    <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
-  </project>
-
+  <remove-project name="platform_system_core" />
+  <remove-project name="platform_build_soong" />
+  <remove-project name="gonk-misc" />
   
-   <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="exp" /> 
+  <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="exp" /> 
   <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  
-  <project groups="kai" name="hidl-gen" path="system/tools/hidl" remote="kaios" revision="master"/> 
-  <project groups="kai" name="libcarthage" path="gonk-misc/libcarthage" remote="kaios" revision="android_10"/>   
-  <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/>  
 
   <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="exp" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -107,6 +95,6 @@
   
   
 
-  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+  <!-- <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" /> -->
 
 </manifest>
