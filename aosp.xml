@@ -11,8 +11,9 @@
 
   
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
-  <!--
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" /> 
+  <!--
+
   <project path="developers/build" name="platform/developers/build" groups="developers,pdk" />
   <project path="developers/demos" name="platform/developers/demos" groups="developers" />
   <project path="developers/samples/android" name="platform/developers/samples/android" groups="developers" />
@@ -133,12 +134,13 @@
 
   <project path="external/avb" name="platform/external/avb" groups="pdk" />
   <project path="external/bcc" name="platform/external/bcc" groups="pdk" />
+  <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk" />
   <!--
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk" />
 
   <project path="external/caliper" name="platform/external/caliper" groups="pdk" />
   <project path="external/capstone" name="platform/external/capstone" groups="pdk" />
-  <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk" />
+
   <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" clone-depth="1" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk" />
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk" />
