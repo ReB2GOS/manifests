@@ -112,11 +112,14 @@
   <project path="external/apache-commons-math" name="platform/external/apache-commons-math" groups="pdk" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" groups="pdk" />
   <project path="external/apache-http" name="platform/external/apache-http" groups="pdk" />
-  <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk" />
+
 
   <project path="external/autotest" name="platform/external/autotest" groups="pdk-fs" />
 
 -->
+  
+    <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk" />
+  
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/adeb" name="platform/external/adeb" groups="pdk" />
  
