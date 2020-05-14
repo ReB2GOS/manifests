@@ -557,9 +557,9 @@
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" groups="pdk" />
   
     <project path="tools/apkzlib" name="platform/tools/apkzlib" groups="pdk,tradefed" />
-
+<project path="tools/apksig" name="platform/tools/apksig" groups="pdk,tradefed" />
   <!--
-  <project path="tools/apksig" name="platform/tools/apksig" groups="pdk,tradefed" />
+  
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" clone-depth="1" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
 -->
