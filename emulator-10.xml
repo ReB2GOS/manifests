@@ -6,8 +6,8 @@
   <include name="kaios.xml"/> 
   <!-- AOSP -->
   <include name="aosp.xml"/>
-  <include name="aosp_env_darwin.xml"/>
-  <include name="aosp_env_liunx.xml"/>
+  <include name="aosp_darwin.xml"/>
+  <include name="aosp_liunx.xml"/>
   <remote fetch="https://android.googlesource.com" name="aosp" />
   
   <default revision="refs/tags/android-10.0.0_r11" remote="aosp"/>
