@@ -23,8 +23,7 @@
   <remove-project name="platform/hardware/libhardware_legacy" />
   <remove-project name="platform/external/selinux" />
  
-  <remove-project name="platform/prebuilts/qemu-kernel" />
-  <remove-project name="platform/prebuilts/android-emulator" />
+
   <remove-project name="platform/external/linux-kselftest" />
  
   <!-- onyx mod -->
