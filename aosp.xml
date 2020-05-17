@@ -126,8 +126,9 @@
   <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" clone-depth="1" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="pdk" />
   <project path="external/crcalc" name="platform/external/crcalc" groups="pdk" />
-  <project path="external/cros/system_api" name="platform/external/cros/system_api" groups="pdk" />
+  
 -->
+  <project path="external/cros/system_api" name="platform/external/cros/system_api" groups="pdk" />
   <project path="external/boringssl" name="platform/external/boringssl" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/brotli" name="platform/external/brotli" groups="pdk" />
