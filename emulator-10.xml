@@ -18,7 +18,6 @@
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project name="obj" path="out" remote="reb2g" revision="master"/>
   
 
 </manifest>
