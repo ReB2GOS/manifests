@@ -56,6 +56,7 @@
   <project path="system/ucontainer" name="platform/system/ucontainer" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
   <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
