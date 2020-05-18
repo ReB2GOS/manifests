@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-
+  
   <!-- KaiOS -->
   <include name="kaios.xml"/> 
   <!-- AOSP -->
   <include name="aosp.xml"/>
-  <include name="aosp_env_darwin.xml"/>
-  <include name="aosp_env_liunx.xml"/>
+  <include name="aosp_darwin.xml"/>
+  <include name="aosp_liunx.xml"/>
   <remote fetch="https://android.googlesource.com" name="aosp" />
   
   <default revision="refs/tags/android-10.0.0_r11" remote="aosp"/>
   
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
