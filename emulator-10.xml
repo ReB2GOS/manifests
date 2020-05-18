@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="reb2g"  fetch="https://github.com/ReB2GOS/" />
-
+  
   <!-- KaiOS -->
   <include name="kaios.xml"/> 
   <!-- AOSP -->
