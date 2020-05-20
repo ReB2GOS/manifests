@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp" fetch="https://android.googlesource.com" />
+     <remote  name="ustc"
+           fetch="git://mirrors.ustc.edu.cn/aosp" />
   
   <!-- AOSP -->
   <project path="art" name="platform/art" groups="pdk" />
