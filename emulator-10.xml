@@ -14,9 +14,13 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="pdk-fs" clone-depth="1" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+   <!--<project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" /> -->
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
+  
+  <project path="external/dhcpcd-6.8.2" name="platform/external/dhcpcd-6.8.2" groups="pdk" revision="refs/tags/android-9.0.0_r56" />
+  <project groups="kai" name="device_generic_goldfish" path="device/generic/goldfish" remote="kaios" revision="gonk_android-10.0.0_r11" />
+
   
 
 </manifest>
