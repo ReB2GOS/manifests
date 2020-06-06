@@ -20,10 +20,5 @@
   
   <project path="external/dhcpcd-6.8.2" name="platform/external/dhcpcd-6.8.2" groups="pdk" revision="refs/tags/android-9.0.0_r56" />
   <project groups="kai" name="device_generic_goldfish" path="device/generic/goldfish" remote="kaios" revision="gonk_android-10.0.0_r11" />
- 
-  <remove-project name="platform/system/vold" />
-  <project groups="kai" name="platform_system_vold" path="system/vold" remote="kaios" revision="gonk_android-10.0.0_r11"/>
-
-  
 
 </manifest>
