@@ -11,7 +11,7 @@
   <remote name="reb2g"  fetch="https://github.com/ReB2GOS/" />
 
   <default revision="refs/tags/android-10.0.0_r11"
-           remote="aosp"
+           remote="ustc"
            sync-j="128" />
  
   <remove-project name="platform/art" />
