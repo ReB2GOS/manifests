@@ -68,12 +68,14 @@
   <project name="ReB2GOS/gonk-misc" path="gonk-misc"  remote="github" revision="exp" /> 
   <remove-project name="gonk-misc" />  
   -->
+ <!-- 
   <remove-project name="platform_system_core" />
+  <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" /> 
+  -->
   <remove-project name="platform_build" />
   <remove-project name="platform_build_soong" />
  
  
-  <project name="ReB2GOS/system_core" path="system/core"  remote="github" revision="gonk-onyx" />  
 
   <project path="build/make" name="ReB2GOS/build_make" groups="pdk" remote="github" revision="exp" >
     <copyfile src="core/root.mk" dest="Makefile" />
