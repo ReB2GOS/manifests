@@ -6,6 +6,7 @@
   <remote name="github" fetch="https://github.com" />
   <remote name="lemon"  fetch="https://github.com/Pie-onyx" revision="aosp-10.0" />
   <remote name="reb2g"  fetch="https://github.com/ReB2GOS/" />
+  <remote  name="ustc"  fetch="git://mirrors.ustc.edu.cn/aosp" />
 
   <default revision="refs/tags/android-10.0.0_r11"
            remote="ustc"
