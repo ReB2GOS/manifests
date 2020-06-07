@@ -9,8 +9,11 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+    <default revision="refs/tags/android-10.0.0_r11"
+           remote="ustc"
+           sync-j="128" />
   <default revision="refs/tags/android-10.0.0_r11"
-           remote="aosp"
+           remote="ustc"
            sync-j="128" />
 
   <project path="build/make" name="build_make" groups="pdk" remote="lemon" >
