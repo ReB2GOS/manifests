@@ -9,9 +9,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-    <default revision="refs/tags/android-10.0.0_r11"
-           remote="ustc"
-           sync-j="128" />
+  <remote  name="ustc" fetch="git://mirrors.ustc.edu.cn/aosp" />
+  
   <default revision="refs/tags/android-10.0.0_r11"
            remote="ustc"
            sync-j="128" />
