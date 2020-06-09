@@ -577,6 +577,7 @@
 
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="lemon" />  
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="lemon" />
+  <project path="bionic" name="bionic" groups="pdk" remote="lemon" />
   
   
   <!-- KaiOS -->
@@ -592,7 +593,7 @@
     <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
   </project>
     <!-- AOSP change in KaiOS -->
-  <project groups="kai" name="platform_build" path="build/make" remote="kaios" revision="gonk_android-10.0.0_r11">
+  <project groups="kai" name="ReB2GOS/build_make" path="build/make" remote="github" revision="gonk-onyx">
     <copyfile src="core/root.mk" dest="Makefile"/>
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -601,7 +602,7 @@
     <linkfile src="target" dest="build/target"/>
     <linkfile src="tools" dest="build/tools"/>
   </project>
-  <project groups="kai" name="platform_build_soong" path="build/soong" remote="kaios" revision="gonk_android-10.0.0_r11">
+  <project groups="kai" name="ReB2GOS/build_soong" path="build/soong" remote="github" revision="gonk-onyx">
     <linkfile src="root.bp" dest="Android.bp"/>
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
@@ -626,7 +627,6 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bionic" name="bionic" groups="pdk" remote="lemon" />
   <project path="system/core" name="system_core" groups="pdk" remote="lemon"  /> 
   
   <project path="system/tools/hidl" name="platform/system/tools/hidl" groups="pdk" />
