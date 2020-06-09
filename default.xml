@@ -610,7 +610,7 @@
    <!-- <project groups="kai" name="platform_system_core" path="system/core" remote="kaios" revision="gonk_android-10.0.0_r11"/>-->
     <project groups="kai" name="ReB2GOS/system_core" path="system/core" remote="github" revision="gonk"/>
     <!--<project path="art" name="art" groups="pdk" remote="lemon" /> -->
-  <project groups="kai" name="platform_art" path="art" remote="kaios" revision="gonk_android-10.0.0_r11"/>
+  <project groups="kai" name="ReB2GOS/platform_art" path="art" remote="github" revision="onyx"/>
   
     <!--
    <project path="build/make" name="build_make" groups="pdk" remote="lemon" >
