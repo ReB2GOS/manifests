@@ -594,7 +594,7 @@
     <copyfile dest="frameworks/base/packages/Android.mk" src="vts/tools/build/Android.host_config.mk"/>
   </project>
     <!-- AOSP change in KaiOS -->
-  <project groups="kai" name="ReB2GOS/build_make" path="build/make" remote="github" revision="gonk-onyx">
+  <project groups="kai" name="platform_build" path="build/make" remote="kaios" revision="gonk_android-10.0.0_r11">
     <copyfile src="core/root.mk" dest="Makefile"/>
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
@@ -603,14 +603,14 @@
     <linkfile src="target" dest="build/target"/>
     <linkfile src="tools" dest="build/tools"/>
   </project>
-  <project groups="kai" name="ReB2GOS/build_soong" path="build/soong" remote="github" revision="gonk-onyx">
+  <project groups="kai" name="platform_build_soong" path="build/soong" remote="kaios" revision="gonk_android-10.0.0_r11">
     <linkfile src="root.bp" dest="Android.bp"/>
     <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
     <project groups="kai" name="platform_system_connectivity_wificond" path="system/connectivity/wificond" remote="kaios" revision="gonk_android-10.0.0_r11"/>
   <project groups="kai" name="platform_system_vold" path="system/vold" remote="kaios" revision="gonk_android-10.0.0_r11"/>
    <!-- <project groups="kai" name="platform_system_core" path="system/core" remote="kaios" revision="gonk_android-10.0.0_r11"/>-->
-    <project groups="kai" name="ReB2GOS/system_core" path="system/core" remote="github" revision="gonk"/>
+    <project groups="kai" name="ReB2GOS/system_core" path="system/core" remote="kaios" revision="gonk_android-10.0.0_r11"/>
     <!--<project path="art" name="art" groups="pdk" remote="lemon" /> -->
   <project groups="kai" name="ReB2GOS/platform_art" path="art" remote="github" revision="onyx"/>
   
