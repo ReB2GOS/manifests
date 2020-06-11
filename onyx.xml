@@ -58,10 +58,11 @@
   <!-- <project path="patcher" name="patcher" remote="lemon" revision="master" /> -->
   <project path="vendor/lemon" name="vendor_lemon" remote="lemon" />
   <project name="ReB2GOS/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="exp" />
-  <!-- <project name="ReB2GOS/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="lineage-17.0-sultan" depth="1" /> -->
+  <project name="ReB2GOS/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="lineage-17.0-sultan" depth="1" />
   <project name="YumeMichi/vendor_oneplus_onyx" path="vendor/oneplus/onyx" remote="github" revision="lineage-17.0" depth="1" />
-  <project name="PixysOS-Devices/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="ten" depth="1" />
-   <!-- gonk mod -->
+
+ 
+ <!-- gonk mod -->
   
   <!-- 
   <project groups="kai" name="ReB2GOS/gecko-b2g" path="gecko"  remote="github" revision="gonk" />  
